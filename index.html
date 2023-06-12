@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script type = "module"></script> -->
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/styles.css">
+
+  <title>Simple calculator</title>
+
+</head>
+
+<body>
+
+
+  <div class="wrapper">
+
+    <div class="container">
+
+      <!-- Display Area -->
+      <div class="disp">
+        <input id="display" class="expression">
+        <p id="result"></p>
+      </div>
+
+      <!-- Button Sections -->
+      <div>
+
+        <div class="buttons">
+          <!--========== All clear ==========-->
+          <button class="clear" value="AC" onclick="display.value = ''">AC</button>
+
+          <!--========== One Figure Delete ==========-->
+          <button class="delete" value="DEL" onclick="display.value = display.value.toString().slice(0, -1)">DEL</button>
+
+          <!--========== Decimal ==========-->
+          <button class="decimal" value="." onclick="display.value += '.'">.</button>
+
+          <!--========== Division ==========-->
+          <button class="division" value='/' onclick="display.value += '/'">/</button>
+
+          <!--========== Power ==========-->
+          <button class="power" value="^" onclick="display.value += '^'">^</button>
+
+          <!--========== modulo ==========-->
+          <button class="modulo" value="%" onclick="display.value += '%'">%</button>
+        </div>
+
+
+
+        <div class="buttons">
+          <!--========== Seven ==========-->
+          <button class="seven" onclick="display.value += 7">7</button>
+
+          <!--========== Eight ==========-->
+          <button class="eight" onclick="display.value += 8">8</button>
+
+          <!--========== Nine ==========-->
+          <button class="nine" onclick="display.value += 9">9</button>
+
+          <!--========== Multiply ==========-->
+          <button class="multiply" value='x' onclick="display.value += '*'">x</button>
+
+          <!--========== Cube Root ==========-->
+          <button class="cubeRoot" value="c" onclick="display.value += '&#8731'">&#8731</button>
+
+          <!--========== Square Root ==========-->
+          <button class="squareRoot" value="s" onclick="display.value += '&#8730'">&#8730</button>
+        </div>
+
+
+
+        <div class="buttons">
+          <!--========== FFour ==========-->
+          <button class="four" onclick="display.value += 4">4</button>
+
+          <!--========== Five ==========-->
+          <button class="five" onclick="display.value += 5">5</button>
+
+          <!--========== Six ==========-->
+          <button class="six" onclick="display.value += 6">6</button>
+
+          <!--========== Subtract ==========-->
+          <button class="subtract" onclick="display.value += '-'">-</button>
+
+          <!--========== Factorial ==========-->
+          <button class="factorial" value="x!" onclick="display.value += '!'">x!</button>
+
+          <!--========== Bitwise AND ==========-->
+          <button class="bitwiseAnd" value="&" onclick="display.value+='&'">&</button>
+        </div>
+
+
+
+        <div class="buttons">
+          <button class="one" onclick="display.value += 1">1</button>
+
+          <!--========== Two ==========-->
+          <button class="two" onclick="display.value += 2">2</button>
+
+          <!--========== Three ==========-->
+          <button class="three" onclick="display.value += 3">3</button>
+
+          <!--========== Addition ==========-->
+          <button class="addition" onclick="display.value += '+'">+</button>
+
+          <!--========== Bitwise OR ==========-->
+          <button class="" value="|" onclick="display.value+='|'">|</button>
+
+          <!--========== Bitwise NOT ==========-->
+          <button class="" value="~" onclick="display.value+='~'">~</button>
+        </div>
+
+
+
+        <div class="buttons">
+          <!--========== Empty Button ==========-->
+          <button class=""></button>
+
+          <!--========== Double Zero ==========-->
+          <button class="double Zero" value="00" onclick="display.value += '00'">00</button>
+
+          <!--========== Zero ==========-->
+          <button class="zero" onclick="display.value += 0">0</button>
+
+          <!--========== Equal  To ==========-->
+          <button class="equal" value="=" onclick="doCalculation()">=</button>
+
+          <!--========== Bitwise Right Shift ==========-->
+          <button class="bitwiseRightShift" value=">>" onclick="display.value+='>>'"> >> </button>
+
+          <!--========== Bitwise Left Shift ==========-->
+          <button class="bitwiseLeftShift" value="<<" onclick="display.value+='<<'">
+            << </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!--========== JavaScript ==========-->
+  <script src="index.js">
+
+  </script>
+</body>
+
+</html>
