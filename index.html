@@ -31,7 +31,7 @@
 
         <div class="buttons">
           <!--========== All clear ==========-->
-          <button class="clear" value="AC" onclick="display.value = ''">AC</button>
+          <button class="clear" value="AC" onclick="display.value = ''; clearit()">AC</button>
 
           <!--========== One Figure Delete ==========-->
           <button class="delete" value="DEL" onclick="display.value = display.value.toString().slice(0, -1)">DEL</button>
@@ -146,7 +146,7 @@
 
   <!--========== JavaScript ==========-->
   <script src="index.js">
-
+    
   </script>
 </body>
 

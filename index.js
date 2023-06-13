@@ -1,4 +1,8 @@
-
+// let clearing = document.getElementById('result').textContent;
+    function clearit(){
+        result = '';
+        document.getElementById("result").textContent = result;
+    }
 function doCalculation() {
     // this function will always evaluate when the 'equal to' button is triggered
     // collect the expression
@@ -213,6 +217,8 @@ function doCalculation() {
 
         return ansa;
     }
+
+    
     result = solveSignIndex(operators);
 
     try{
